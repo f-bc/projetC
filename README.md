@@ -27,30 +27,30 @@ En fin, on génére un rapport dans le fichier rapport_journalier.txt contenant:
 
 **int T_calculmoy(int t[], int n)** calcule la moyenne d’un tableau.
 
-**void add_min(Time *t)*** elle avance de 30 minutes le temps t. elle représente une horloge qui avance de 30 minutes à chaque nouvelle température, elle indique le temps en heures et minutes.
+void add_min(Time *t):  elle avance de 30 minutes le temps t. elle représente une horloge qui avance de 30 minutes à chaque nouvelle température, elle indique le temps en heures et minutes.
 
-**int alerte(int T, int val_seuil, int *nb_c, int *nb_m, int *nb_s)***** À partir d’une température et d’une valeur seuil, cette fonction affiche un message correspondant au type de dépassement, incrémente de 1 le compteur associé à ce type d’alerte, et retourne 1 pour un avertissement léger, 2 pour une alerte moyenne et 3 pour une alerte critique.
+int alerte(int T, int val_seuil, int *nb_c, int *nb_m, int *nb_s):  À partir d’une température et d’une valeur seuil, cette fonction affiche un message correspondant au type de dépassement, incrémente de 1 le compteur associé à ce type d’alerte, et retourne 1 pour un avertissement léger, 2 pour une alerte moyenne et 3 pour une alerte critique.
 
 **Time duree(listch2 L)** à partir d’une liste chainée de type listch2, elle détermine le total des durées des alertes .
 
-**void supprimer(listch1 * head)** supprime le premier élement d’une liste chainée de type listch1.
+void supprimer(listch1 * head):  supprime le premier élement d’une liste chainée de type listch1.
 
-**int fausse_alarme(listch1 *L)*** on donne les trois derniers états de température(soit alerte critique(3),ou modérée(2) ou simple(1) ou pas en état d'alerte(0)) si on a trois valeurs consécutifs qui sont égaux et différents de 0(càd on trois alertes consécutifs de méme type) donc on a une fausse alerte car le regulateur aurait du corriger la température.
+int fausse_alarme(listch1 *L):  on donne les trois derniers états de température(soit alerte critique(3),ou modérée(2) ou simple(1) ou pas en état d'alerte(0)) si on a trois valeurs consécutifs qui sont égaux et différents de 0(càd on trois alertes consécutifs de méme type) donc on a une fausse alerte car le regulateur aurait du corriger la température.
 
 **int iéme(listch1 L,int i)** retourne l'ième élément d'une liste chainée de type listch1.
 
-**int LENF(FILE *fp)*** retourne la longueur d'un fichier.
+int LENF(FILE *fp):  retourne la longueur d'un fichier.
 
-**void inserer1(listch1 *L,int x)*** permet l'insertion d'un element x à la fin d'une liste chainée de type listch1.
+void inserer1(listch1 *L,int x):  permet l'insertion d'un element x à la fin d'une liste chainée de type listch1.
 
 **int len(listch1 Lch)** retourne la longueur d'une liste chainée de type listch1.
 
-**void add_date(Date *d)*** permet d'avancer d'un jour d'une date donnée.si l'on depasse le nombre maximum de jours du mois, on passe au mois suivant.
+void add_date(Date *d):  permet d'avancer d'un jour d'une date donnée.si l'on depasse le nombre maximum de jours du mois, on passe au mois suivant.
 
-**int Attention(listch1 *L)*** retourne 1 si il ya des dépassements imprévus de la température sinon 0.
+int Attention(listch1 *L):  retourne 1 si il ya des dépassements imprévus de la température sinon 0.
 
-**void inserer2(listch2 *L,int et,Time temps)*** permet l'insertion d'un nouvel element a la fin d'une liste chainée de type listch2.
+void inserer2(listch2 *L,int et,Time temps):  permet l'insertion d'un nouvel element a la fin d'une liste chainée de type listch2.
 
-**void empty1(listch1 *L)*** vide une liste chainée de type listch1
+void empty1(listch1 *L):  vide une liste chainée de type listch1
 
-**void empty2(listch2 *L2)*** vide une liste chainée de type listch2
+void empty2(listch2 *L2): vide une liste chainée de type listch2
