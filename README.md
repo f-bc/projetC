@@ -1,4 +1,5 @@
-# projetC du group CodePulse class ii1f 
+# projetC  du group CodePulse class ii1f 
+# Application pour gérer un Contrôleur Intelligent de Température (IOT)
 
 Le programme enregistre les valeurs seuil_min,seuil_max,et les bornes de l'intervalle de températures permises dans le fichier config.txt.
 
